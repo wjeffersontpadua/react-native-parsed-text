@@ -1,13 +1,12 @@
 import { PressableTextProps } from './lib/PressableText';
+import { Component } from 'react';
+import { TextProps } from 'react-native';
 
 declare module 'react-native-parsed-text' {
-  import { Component } from 'react';
-  import { TextProps } from 'react-native';
-
   interface BaseParseShape
     extends Pick<
-      TextProps,
-      Exclude<keyof TextProps, 'onPress' | 'onLongPress'>
+      PressableTextProps,
+      Exclude<keyof PressableTextProps, 'onPress' | 'onLongPress'>
     > {
     /** arbitrary function to rewrite the matched string into something else */
     renderText?: (matchingString: string, matches: string[]) => string;

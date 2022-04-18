@@ -41,7 +41,9 @@
     "prettier": "2.0.x",
     "react": "16.13.x",
     "react-native": "0.62.x",
-    "react-test-renderer": "16.13.x"
+    "react-test-renderer": "16.13.x",
+    "@types/react": "^18.0.5",
+    "@types/react-native": "^0.67.4"
   },
   "author": "jrichardlai",
   "license": "MIT",

@@ -1,3 +1,5 @@
+import { PressableTextProps } from './lib/PressableText';
+
 declare module 'react-native-parsed-text' {
   import { Component } from 'react';
   import { TextProps } from 'react-native';
@@ -38,7 +40,7 @@ declare module 'react-native-parsed-text' {
 
   export interface ParsedTextProps extends TextProps {
     parse?: ParseShape[];
-    childrenProps?: TextProps;
+    childrenProps?: PressableTextProps;
   }
 
   export default class ParsedText extends Component<ParsedTextProps> {}

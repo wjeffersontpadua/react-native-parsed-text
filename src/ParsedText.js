@@ -3,6 +3,7 @@ import { Text } from 'react-native';
 import PropTypes from 'prop-types';
 
 import TextExtraction from './lib/TextExtraction';
+import { PressableText } from './lib/PressableText';
 
 /**
  * This is a list of the known patterns that are provided by this library
@@ -111,7 +112,7 @@ class ParsedText extends React.Component {
       const { style: parentStyle } = this.props;
       const { style, ...remainder } = props;
       return (
-        <Text
+        <PressableText
           key={`parsedText-${index}`}
           style={[parentStyle, style]}
           {...this.props.childrenProps}

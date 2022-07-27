@@ -25,6 +25,7 @@ export const PressableText = ({
 
   return (
     <Text
+      testID={`parsedText-${props.children}`}
       suppressHighlighting
       {...props}
       onPressIn={(event) => {
